@@ -1,0 +1,198 @@
+  <!DOCTYPE html> 
+  
+  <html lang="en"> 
+  
+  <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Birthday Present</title>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = "spage.html">
+
+  <style>
+  .con{
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .girl {
+    color: rgb(89,62,43);
+    background-color: rgb(227,180,152);
+    height: 50px;
+    width: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 1.2rem;
+    box-shadow:  10px 10px 5px rgb(89,62,43),
+             0 0 0 rgb(141,95,61) ;
+    
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  .card__image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .card__image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  .card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color:  rgb(141,95,61);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    border-top:dashed 3px rgb(227,180,152);
+
+  }
+  
+  .card__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transform: translateY(8px);
+    color: rgb(227,180,152);
+  }
+  
+
+  
+  .card__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(227,180,152);
+    
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid 3px rgb(227,180,152) ;
+    color: rgb(89,62,43);
+    font-size: 20px;
+    box-shadow:  5px 5px 2px rgb(89,62,43),
+             0 0 0 rgb(89,62,43);
+   
+    
+  }
+  .card__button:hover {
+    transform: translateY(20px);
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+  }
+  
+  .card:hover .card__image img {
+    transform: scale(1.2);
+  }
+  
+  .card:hover .card__content {
+    transform: translateY(500px);
+  }
+  
+  .card__image {
+    height: 400px;
+    width: 300px;
+    background-color: #000;
+    /* you can put img url here  */
+  }
+  
+  .shake {
+    animation:shake 0.5s infinite;
+  }
+  
+  @keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.btn-con {
+  display: flex;
+  flex-direction: row;
+  gap:20px ;
+}
+
+a {
+  
+  text-decoration: none;
+  font-size: 50px;
+}
+
+
+
+  </style>
+  
+  </head> 
+  
+  
+  <body>
+  <div class="con">
+  <h1 class="girl">
+  My girl 
+  </h1>
+  <div class="card">
+  <div class="card__image">
+  
+  <img src="picA.jpeg">
+  
+  
+  </div>
+  
+  <div class="card__content">
+  <p class="card__title">Yumi Hadap</p>
+
+  </p>
+  <div class="btn-con">
+  <button class="card__button" > Tap me </button>
+  
+
+  
+  
+  </div>
+  
+  </div>
+  </div>
+  <a class="2nd-btn" href="spage.html" style="  
+  
+  text-decoration: none;
+  
+  font-size:45px;
+  border-radius: 5px;
+  
+  ">
+    <p class="shake">💌</p></a>
+
+  </div>
+  
+  </body>
+  </html>
